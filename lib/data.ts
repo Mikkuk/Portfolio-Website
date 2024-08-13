@@ -54,6 +54,7 @@ export const projectsData = [
     description:
       "As a summer project participated in the development of an ecommerce website for selling secondhand computer hardware. Learned to design and develop according to customer requirements and how to work with an existing code base",
     tags: ["React", "Redux", "MongoDB", "Tailwind", "Node.js", "Express"],
+    url: null
   },
   {
     title: "Fullstack movie rating app",
