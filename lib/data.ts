@@ -1,6 +1,4 @@
 import React from "react";
-import { CgWorkAlt } from "react-icons/cg";
-import { FaReact } from "react-icons/fa";
 import { LuGraduationCap } from "react-icons/lu";
 
 
@@ -62,13 +60,14 @@ export const projectsData = [
     description:
       "Developed a full-stack application where users can register and review movies",
     tags: ["React", "Redux", "MongoDB", "MaterialUI", "Node.js", "Express"],
-
+    url: "https://github.com/Mikkuk/MovieRatingApp"
   },
   {
     title: "Server communication app",
     description:
       "Project utilizing DevOps practices such as CI/CD pipelines, containerization with Docker and test automation. Built an application using microservices architecture that consists of two servers communicating with each other through HTTP and RabbitMQ with additional Monitor and API-gateway services.",
     tags: ["Node.js", "express", "Docker", "RabbitMQ", "Jest", "Python"],
+    url: "https://github.com/Mikkuk/DevOps"
   },
 ] as const;
 
