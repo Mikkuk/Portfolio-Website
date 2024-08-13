@@ -33,50 +33,42 @@ export const links = [
 
 export const experiencesData = [
   {
-    title: "Graduated bootcamp",
-    location: "Miami, FL",
+    title: "Bachelors Degree in Information Technology",
+    location: "Tampere University",
     description:
-      "I graduated after 6 months of studying. I immediately found a job as a front-end developer.",
+      "Finished my bachelors degree in Information Technology majoring in software development. I learned the basics of programming, web development and the overall software development process. ",
     icon: React.createElement(LuGraduationCap),
-    date: "2019",
+    date: "2019 - 2022",
   },
   {
-    title: "Front-End Developer",
-    location: "Orlando, FL",
+    title: "Master's Degree in Information Technology",
+    location: "Tampere University",
     description:
-      "I worked as a front-end developer for 2 years in 1 job and 1 year in another job. I also upskilled to the full stack.",
-    icon: React.createElement(CgWorkAlt),
-    date: "2019 - 2021",
-  },
-  {
-    title: "Full-Stack Developer",
-    location: "Houston, TX",
-    description:
-      "I'm now a full-stack developer working as a freelancer. My stack includes React, Next.js, TypeScript, Tailwind, Prisma and MongoDB. I'm open to full-time opportunities.",
-    icon: React.createElement(FaReact),
-    date: "2021 - present",
+      "Continuing my studies with the master's degree program in Information Technology. Majoring in web and cloud development.",
+    icon: React.createElement(LuGraduationCap),
+    date: "2023 - present",
   },
 ] as const;
 
 export const projectsData = [
   {
-    title: "CorpComment",
+    title: "E-commerce website ",
     description:
-      "I worked as a full-stack developer on this startup project for 2 years. Users can give public feedback to companies.",
-    tags: ["React", "Next.js", "MongoDB", "Tailwind", "Prisma"],
+      "As a summer project participated in the development of an ecommerce website for selling secondhand computer hardware. Learned to design and develop according to customer requirements and how to work with an existing code base",
+    tags: ["React", "Redux", "MongoDB", "Tailwind", "Node.js", "Express"],
   },
   {
-    title: "rmtDev",
+    title: "Fullstack movie rating app",
     description:
-      "Job board for remote developer jobs. I was the front-end developer. It has features like filtering, sorting and pagination.",
-    tags: ["React", "TypeScript", "Next.js", "Tailwind", "Redux"],
+      "Developed a full-stack application where users can register and review movies",
+    tags: ["React", "Redux", "MongoDB", "MaterialUI", "Node.js", "Express"],
 
   },
   {
-    title: "Word Analytics",
+    title: "Server communication app",
     description:
-      "A public web app for quick analytics on text. It shows word count, character count and social media post limits.",
-    tags: ["React", "Next.js", "SQL", "Tailwind", "Framer"],
+      "Project utilizing DevOps practices such as CI/CD pipelines, containerization with Docker and test automation. Built an application using microservices architecture that consists of two servers communicating with each other through HTTP and RabbitMQ with additional Monitor and API-gateway services.",
+    tags: ["Node.js", "express", "Docker", "RabbitMQ", "Jest", "Python"],
   },
 ] as const;
 
@@ -86,18 +78,16 @@ export const skillsData = [
   "JavaScript",
   "TypeScript",
   "React",
+  "Redux",
   "Next.js",
   "Node.js",
-  "Git",
-  "Tailwind",
-  "Prisma",
-  "MongoDB",
-  "Redux",
-  "GraphQL",
-  "Apollo",
   "Express",
+  "Git",
+  "Docker",
+  "Tailwind",
+  "MongoDB",
   "PostgreSQL",
   "Python",
-  "Django",
-  "Framer Motion",
+  "C++",
+  "Linux",
 ] as const;
