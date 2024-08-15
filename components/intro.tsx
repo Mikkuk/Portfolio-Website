@@ -1,14 +1,29 @@
 'use client';
 
-import React from 'react';
+import React, { useEffect } from 'react';
 import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { BsArrowRight } from 'react-icons/bs';
 import { FaGithubSquare } from 'react-icons/fa';
+import { useInView } from 'react-intersection-observer';
+import { useActiveSectionContext } from '@/context/active-section-context';
 
 export default function Intro() {
+    const { ref, inView } = useInView({ threshold: 0.5});
+    const { setActiveSection } = useActiveSectionContext();
+
+    useEffect(() => {
+        if (inView) {
+            setActiveSection('Home');
+        }
+    }, [inView, setActiveSection]);
+
     return (
-        <section id="home" className="mb-26 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]">
+        <section
+            ref={ref}
+            id="home"
+            className="mb-26 max-w-[50rem] text-center sm:mb-0 scroll-mt-[100rem]"
+        >
             <div className="flex flex-col items-center justify-center">
                 <motion.div
                     initial={{ opacity: 0, y: 100 }}
@@ -49,8 +64,7 @@ export default function Intro() {
                         href="https://github.com/Mikkuk"
                         target="_blank"
                     >
-                        GitHub {' '}
-                        <FaGithubSquare/>
+                        GitHub <FaGithubSquare />
                     </a>
                 </motion.div>
             </div>
