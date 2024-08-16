@@ -20,8 +20,8 @@ export const links = [
     hash: "#skills",
   },
   {
-    name: "Experience",
-    hash: "#experience",
+    name: "Education",
+    hash: "#education",
   },
   {
     name: "Contact",
@@ -29,12 +29,12 @@ export const links = [
   },
 ] as const;
 
-export const experiencesData = [
+export const educationData = [
   {
     title: "Bachelors Degree in Information Technology",
     location: "Tampere University",
     description:
-      "Finished my bachelors degree in Information Technology majoring in software development. I learned the basics of programming, web development and the overall software development process. ",
+      "Finished my bachelors degree in Information Technology majoring in software development. I learned the basics of programming, web development and about the software development process. ",
     icon: React.createElement(LuGraduationCap),
     date: "2019 - 2022",
   },
