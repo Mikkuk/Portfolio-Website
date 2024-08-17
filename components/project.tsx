@@ -30,16 +30,16 @@ export default function Project({
             }}
             className="group mb-3 sm:mb-8 last:mb-0"
         >
-            <section className="bg-gray-200 max-w-[42rem] border border-black/5 rounded-lg">
+            <section className="bg-gray-200 max-w-[42rem] border border-black/5 rounded-lg dark:text-white dark:bg-white/10">
                 <div className="pt-4 pb-7 px-6 sm:pt-10 flex flex-col h-full">
                     <h3 className="text-2xl font-semibold">{title}</h3>
-                    <p className="mt-2 leading-relaxed text-gray-700">
+                    <p className="mt-2 leading-relaxed text-gray-700 dark:text-white/70">
                         {description}
                     </p>
                     <ul className="flex flex-wrap mt-4 gap-2">
                         {tags.map((tag, index) => (
                             <li
-                                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full"
+                                className="bg-black/[0.7] px-3 py-1 text-[0.7rem] uppercase tracking-wider text-white rounded-full dark:text-white/70"
                                 key={index}
                             >
                                 {tag}
@@ -50,7 +50,7 @@ export default function Project({
                         <a
                             className="bg-white text-grey-900 px-7 py-3 mt-4
                             flex items-center justify-center w-full gap-2 rounded-full outline-none focus:scale-105 
-                            hover:scale-105 active:scale-105 transition"
+                            hover:scale-105 active:scale-105 transition dark:bg-white/20"
                             href={url}
                             target="_blank"
                         >

@@ -28,7 +28,7 @@ export default function Contact() {
         >
             <SectionHeading>Contact me</SectionHeading>
 
-            <p className="text-gray-700 mb-[10rem]">
+            <p className="text-gray-700 mb-[10rem] dark:text-white/80">
                 You can contact me directly at{' '}
                 <a
                     className="underline"
