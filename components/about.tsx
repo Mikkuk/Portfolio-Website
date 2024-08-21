@@ -36,7 +36,7 @@ export default function About() {
 
             <p>
                 <span className="italic">During my free time</span>, I enjoy
-                reading and watching movies. Inspired by my love of cinema this
+                reading and watching movies. Inspired by my interest in the art of cinema this
                 page has a small movie trivia game that you can play if reading
                 about me gets boring.
             </p>
