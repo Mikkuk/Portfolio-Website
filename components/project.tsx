@@ -28,7 +28,7 @@ export default function Project({
                 scale: scaleProgess,
                 opacity: opacityProgess,
             }}
-            className="group mb-3 sm:mb-8 last:mb-0"
+            className="mb-3 sm:mb-8 last:mb-0"
         >
             <section className="bg-gray-200 max-w-[42rem] border border-black/5 rounded-lg dark:text-white dark:bg-white/10">
                 <div className="pt-4 pb-7 px-6 sm:pt-10 flex flex-col h-full">
