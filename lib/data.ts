@@ -97,47 +97,47 @@ export const skillsData = [
 
 export const questions = [
     {
-        question: 'Based on just the image, what movie is this?',
+        question: 'What movie is this?',
         answer: 'Lawrence of Arabia',
         hints: [
             'This masterpiece was directed by David Lean',
             'It is based on a real person',
             'Movie takes place during World War I',
         ],
-        tieInLine: 'Patience is one of my many virtues (this movie is 3,5 hours long)',
+        tieInLine: '"Patience is one of my many virtues and I do not shy away from things that take time" (this movie is 3,5 hours long)',
         img: lawrenceOfArabiaImg,
     },
     {
-        question: 'Based on just the image, what movie is this?',
+        question: 'What movie is this?',
         answer: 'The Big Lebowski',
         hints: [
             'The movie was directed by the Coen brothers',
             'Stars Steve Buscemi',
             "'The Dude abides'",
         ],
-        tieInLine: 'Like the Dude, I am relaxed and easy going (and I also like bowling)',
+        tieInLine: '"Like the Dude, I am also chill, relaxed and easy going" (and I also quite enjoy bowling)',
         img: theBigLebowskiImg,
     },
     {
-        question: 'Based on just the image, what movie is this?',
+        question: 'What movie is this?',
         answer: 'Indiana Jones and the Last Crusade',
         hints: [
             'Directed by Steven Spielberg',
             'Stars Sean Connery',
             'This movie wraps up a legendary trilogy',
         ],
-        tieInLine: 'I am also on a crusade to improve as a developer',
+        tieInLine: '"I am also on a crusade to improve as a developer"',
         img: theLastCrusadeImg,
     },
     {
-        question: 'Based on just the image, what movie is this?',
+        question: 'What movie is this?',
         answer: 'Barry Lyndon',
         hints: [
             'The director of this movie is infamous for his perfectionism',
             'The movie takes place in the 18th century Europe',
             'The director Stanley Kubrick insisted on using only natural light for the movie',
         ],
-        tieInLine: 'Much like Kubrick, I also strive for perfection (maybe not as obsessively though)',
+        tieInLine: '"Much like Kubrick, I also strive for perfection" (maybe not as obsessively though)',
         img: barryLyndonImg,
     },
 ] as const;
