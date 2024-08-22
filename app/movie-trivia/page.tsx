@@ -5,7 +5,7 @@ import { motion } from 'framer-motion';
 import Link from 'next/link';
 import { TbArrowBackUp } from 'react-icons/tb';
 import { questions } from '@/lib/data';
-
+import Image from 'next/image';
 
 export default function Page() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -43,7 +43,7 @@ export default function Page() {
             <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="max-w-[50rem] text-center"
+                className="max-w-[50rem] text-center "
             >
                 <Link
                     href="/#home"
@@ -60,6 +60,14 @@ export default function Page() {
                 <p className="mb-10 mt-4 px-4 text-xl font-medium !leading-[1.5] sm:text-4xl">
                     {questions[currentQuestionIndex].question}
                 </p>
+                <Image
+                    className="relative my-4 mx-auto max-w-[18rem] max-h-[20rem] md:max-w-[30rem] md:max-h-[35rem] rounded-lg shadow-lg"
+                    src={questions[currentQuestionIndex].img}
+                    alt="image from the movie"
+                />
+                {hint && (
+                    <p className="m-4 px-4 text-xl font-medium">Hint: {hint}</p>
+                )}
                 <form
                     className="my-10 flex flex-col items-center justify-center dark:text-black"
                     onSubmit={handleSubmit}
@@ -68,6 +76,7 @@ export default function Page() {
                         className="h-14 w-full px-4 rounded-lg border-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
                         type="text"
                         value={userAnswer}
+                        placeholder="Type your answer here"
                         onChange={(e) => setUserAnswer(e.target.value)}
                     />
                     <button
@@ -77,7 +86,6 @@ export default function Page() {
                         Submit
                     </button>
                 </form>
-                {hint && <p>Hint: {hint}</p>}
             </motion.div>
         </main>
     );
