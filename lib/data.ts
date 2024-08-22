@@ -91,3 +91,21 @@ export const skillsData = [
   "C++",
   "Linux",
 ] as const;
+
+export const questions = [
+  {
+      question: "What is the name of the spaceship in 'Alien'?",
+      answer: 'Nostromo',
+      hints: ["It starts with 'N'", 'It has 7 letters', "It ends with 'o'"],
+  },
+  {
+      question: "Who directed 'Pulp Fiction'?",
+      answer: 'Quentin Tarantino',
+      hints: [
+          "First name starts with 'Q'",
+          "Last name starts with 'T'",
+          'Famous for non-linear storytelling',
+      ],
+  },
+  // Add more questions as needed
+] as const;

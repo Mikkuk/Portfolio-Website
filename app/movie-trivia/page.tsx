@@ -2,24 +2,10 @@
 
 import React, { useState } from 'react';
 import { motion } from 'framer-motion';
+import Link from 'next/link';
+import { TbArrowBackUp } from 'react-icons/tb';
+import { questions } from '@/lib/data';
 
-const questions = [
-    {
-        question: "What is the name of the spaceship in 'Alien'?",
-        answer: 'Nostromo',
-        hints: ["It starts with 'N'", 'It has 7 letters', "It ends with 'o'"],
-    },
-    {
-        question: "Who directed 'Pulp Fiction'?",
-        answer: 'Quentin Tarantino',
-        hints: [
-            "First name starts with 'Q'",
-            "Last name starts with 'T'",
-            'Famous for non-linear storytelling',
-        ],
-    },
-    // Add more questions as needed
-];
 
 export default function Page() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -53,12 +39,21 @@ export default function Page() {
     }
 
     return (
-        <main className="flex flex-col items-center">
+        <main className="flex flex-col items-center mx-5">
             <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}
-                className="max-w-[50rem] sm:my-[5rem] text-center "
+                className="max-w-[50rem] text-center"
             >
+                <Link
+                    href="/#home"
+                    className="group bg-gray-900 text-white px-7 py-3 mt-6 mb-20
+                        flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 
+                        hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+                >
+                    Back to Portfolio{' '}
+                    <TbArrowBackUp className="opacity-70 group-hover:translate-x-1 transition" />
+                </Link>
                 <h1 className="m-4 px-4 text-2xl font-bold sm:text-4xl">
                     Movie Trivia
                 </h1>
@@ -70,13 +65,13 @@ export default function Page() {
                     onSubmit={handleSubmit}
                 >
                     <input
-                        className="h-14 w-3/4 px-4 rounded-lg border-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                        className="h-14 w-full px-4 rounded-lg border-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
                         type="text"
                         value={userAnswer}
                         onChange={(e) => setUserAnswer(e.target.value)}
                     />
                     <button
-                        className="mt-4 gap-2 h-[3rem] w-[8rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10"
+                        className="mt-4 gap-2 h-[3rem] w-[10rem] bg-gray-900 text-white rounded-full outline-none transition-all focus:scale-110 hover:scale-110 hover:bg-gray-950 active:scale-105 dark:bg-white dark:bg-opacity-10"
                         type="submit"
                     >
                         Submit
