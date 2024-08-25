@@ -1,7 +1,7 @@
 import React from 'react';
 import { LuGraduationCap } from 'react-icons/lu';
 import barryLyndonImg from '@/public/BarryLyndon.jpg';
-import theLastCrusadeImg from '@/public/theLastCrusade.jpg';
+import theLastCrusadeImg from '@/public/lastCrusade.jpg';
 import theBigLebowskiImg from '@/public/bigLebowski.jpg';
 import lawrenceOfArabiaImg from '@/public/LawrenceOfArabia.jpg';
 

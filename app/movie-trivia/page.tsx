@@ -113,7 +113,7 @@ export default function Page() {
                             </span>
                         </p>
                         <Image
-                            className="relative my-4 mx-auto max-w-[18rem] max-h-[20rem] md:max-w-[30rem] md:max-h-[35rem] rounded-lg shadow-lg"
+                            className="relative my-4 mx-auto max-w-[20rem] max-h-[20rem] sm:max-w-[36rem] sm:max-h-[20rem] rounded-lg shadow-lg"
                             src={questions[currentQuestionIndex].img}
                             alt="image from the movie"
                             priority={true}
@@ -162,9 +162,16 @@ export default function Page() {
                 {isAnswerCorrect === false && (
                     <div className="my-10">
                         <p className="m-4 text-xl font-medium">
-                            The correct answer was: 
-                            <span className="my-4 block italic font-bold">{questions[currentQuestionIndex].answer}</span>
-
+                            The correct answer was:
+                            <span className="my-4 block italic font-bold">
+                                {questions[currentQuestionIndex].answer}
+                            </span>
+                            <Image
+                                className="relative my-4 mx-auto max-w-[20rem] max-h-[20rem] sm:max-w-[33rem] sm:max-h-[20rem] rounded-lg shadow-lg object-cover"
+                                src={questions[currentQuestionIndex].img}
+                                alt="image from the movie"
+                                priority={true}
+                            />
                             <span className="block italic font-semibold">
                                 {questions[currentQuestionIndex].tieInLine}
                             </span>
