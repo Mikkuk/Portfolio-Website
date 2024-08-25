@@ -6,6 +6,7 @@ import Link from 'next/link';
 import { TbArrowBackUp } from 'react-icons/tb';
 import { questions } from '@/lib/data';
 import Image from 'next/image';
+import applauseGif from '@/public/applause.webp';
 
 export default function Page() {
     const [currentQuestionIndex, setCurrentQuestionIndex] = useState(0);
@@ -52,9 +53,20 @@ export default function Page() {
 
     if (currentQuestionIndex >= questions.length) {
         return (
-            <div className="flex flex-col items-center m-10">
-                Congratulations! You've completed the trivia. {points}/4 points.
-                Good Effort!
+            <div className="flex flex-col items-center mx-5">
+                <p className="m-4 px-4 text-xl font-medium text-center">
+                    Congratulations! You've completed the trivia.
+                    <span className="block m-4 px-4 text-2xl font-semibold sm:text-4xl">
+                        {points}/4 points.
+                    </span>
+                    Good Effort!
+                </p>
+                <Image
+                    className="relative my-4 mx-auto max-w-[18rem] max-h-[16rem] sm:max-w-[32rem] sm:max-h-[24rem] rounded-lg shadow-lg"
+                    src={applauseGif}
+                    alt="applause gif"
+                    priority={true}
+                />
                 <Link
                     href="/#home"
                     className=" bg-gray-900 text-white px-7 py-3 mt-6 mb-10
@@ -147,6 +159,12 @@ export default function Page() {
                     <div className="my-10">
                         <p className="m-4 px-4 text-xl">
                             Correct!
+                            <Image
+                                className="relative my-4 mx-auto max-w-[20rem] max-h-[20rem] sm:max-w-[36rem] sm:max-h-[20rem] rounded-lg shadow-lg"
+                                src={questions[currentQuestionIndex].posterImg}
+                                alt="poster image from the movie"
+                                priority={true}
+                            />
                             <span className="block italic font-semibold">
                                 {questions[currentQuestionIndex].tieInLine}
                             </span>
@@ -168,8 +186,8 @@ export default function Page() {
                             </span>
                             <Image
                                 className="relative my-4 mx-auto max-w-[20rem] max-h-[20rem] sm:max-w-[33rem] sm:max-h-[20rem] rounded-lg shadow-lg object-cover"
-                                src={questions[currentQuestionIndex].img}
-                                alt="image from the movie"
+                                src={questions[currentQuestionIndex].posterImg}
+                                alt="poster image from the movie"
                                 priority={true}
                             />
                             <span className="block italic font-semibold">

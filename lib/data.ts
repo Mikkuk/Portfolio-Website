@@ -4,6 +4,10 @@ import barryLyndonImg from '@/public/BarryLyndon.jpg';
 import theLastCrusadeImg from '@/public/lastCrusade.jpg';
 import theBigLebowskiImg from '@/public/bigLebowski.jpg';
 import lawrenceOfArabiaImg from '@/public/LawrenceOfArabia.jpg';
+import barryLyndonPosterImg from '@/public/barryLyndonPoster.jpg';
+import theLastCrusadePosterImg from '@/public/lastCrusadePoster.jpg';
+import theBigLebowskiPosterImg from '@/public/bigLebowskiPoster.jpg';
+import lawrenceOfArabiaPosterImg from '@/public/LawrenceOfArabiaPoster.jpg';
 
 export const links = [
     {
@@ -101,33 +105,36 @@ export const questions = [
         answer: 'Lawrence of Arabia',
         hints: [
             'This masterpiece was directed by David Lean',
-            'It is based on a real person',
-            'Movie takes place during World War I',
+            'The movie is based on a real person',
+            'The movie takes place during World War I',
         ],
         tieInLine: '"Patience is one of my many virtues and I do not shy away from things that take time" (this movie is 3,5 hours long)',
         img: lawrenceOfArabiaImg,
+        posterImg: lawrenceOfArabiaPosterImg,
     },
     {
         question: 'What movie is this?',
         answer: 'The Big Lebowski',
         hints: [
             'The movie was directed by the Coen brothers',
-            'Stars Steve Buscemi',
+            'The movie stars Steve Buscemi',
             "'The Dude abides'",
         ],
         tieInLine: '"Like the Dude, I am also chill, relaxed and easy going" (and I also quite enjoy bowling)',
         img: theBigLebowskiImg,
+        posterImg: theBigLebowskiPosterImg,
     },
     {
         question: 'What movie is this?',
         answer: 'Indiana Jones and the Last Crusade',
         hints: [
+            "Sean Connery plays Harrison Ford's father even though he is only 12 years older",
             'Directed by Steven Spielberg',
-            'Stars Sean Connery',
             'This movie wraps up a legendary trilogy',
         ],
-        tieInLine: '"I am also on a crusade to improve as a developer"',
+        tieInLine: '"I am also on a crusade to seek knowledge and improve as a developer"',
         img: theLastCrusadeImg,
+        posterImg: theLastCrusadePosterImg,
     },
     {
         question: 'What movie is this?',
@@ -139,5 +146,6 @@ export const questions = [
         ],
         tieInLine: '"Much like Kubrick, I also strive for perfection" (maybe not as obsessively though)',
         img: barryLyndonImg,
+        posterImg: barryLyndonPosterImg,
     },
 ] as const;
