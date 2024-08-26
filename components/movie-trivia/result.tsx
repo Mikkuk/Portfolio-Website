@@ -24,7 +24,7 @@ export default function Result({
                     {question.answer}
                 </span>
                 <Image
-                    className="relative my-4 mx-auto max-w-[20rem] max-h-[20rem] sm:max-w-[33rem] sm:max-h-[20rem] rounded-lg shadow-lg object-cover"
+                    className="my-4 mx-auto max-w-[20rem] max-h-[20rem] sm:max-w-[33rem] sm:max-h-[20rem] rounded-lg shadow-lg object-cover"
                     src={question.posterImg}
                     alt="poster image from the movie"
                     priority={true}

@@ -44,7 +44,7 @@ export default function Question({
                 </span>
             </p>
             <Image
-                className="relative my-4 mx-auto max-w-[20rem] max-h-[20rem] sm:max-w-[36rem] sm:max-h-[20rem] rounded-lg shadow-lg"
+                className="my-4 mx-auto max-w-[20rem] max-h-[20rem] sm:max-w-[36rem] sm:max-h-[20rem] rounded-lg shadow-lg"
                 src={img}
                 alt="image from the movie"
                 priority={true}

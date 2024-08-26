@@ -23,7 +23,7 @@ export default function EndScreen({
                 Good Effort!
             </p>
             <Image
-                className="relative my-4 mx-auto w-auto h-auto max-w-[18rem] max-h-[16rem] sm:max-w-[32rem] sm:max-h-[24rem] rounded-lg shadow-lg"
+                className="my-4 mx-auto max-w-[18rem] max-h-[16rem] sm:max-w-[32rem] sm:max-h-[25rem] rounded-lg shadow-lg"
                 src={applauseGif}
                 alt="applause gif"
                 priority={true}
