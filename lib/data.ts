@@ -1,13 +1,13 @@
 import React from 'react';
 import { LuGraduationCap } from 'react-icons/lu';
-import barryLyndonImg from '@/public/BarryLyndon.jpg';
+import barryLyndonImg from '@/public/barryLyndon.jpg';
 import theLastCrusadeImg from '@/public/lastCrusade.jpg';
 import theBigLebowskiImg from '@/public/bigLebowski.jpg';
-import lawrenceOfArabiaImg from '@/public/LawrenceOfArabia.jpg';
+import lawrenceOfArabiaImg from '@/public/lawrenceOfArabia.jpg';
 import barryLyndonPosterImg from '@/public/barryLyndonPoster.jpg';
 import theLastCrusadePosterImg from '@/public/lastCrusadePoster.jpg';
 import theBigLebowskiPosterImg from '@/public/bigLebowskiPoster.jpg';
-import lawrenceOfArabiaPosterImg from '@/public/LawrenceOfArabiaPoster.jpg';
+import lawrenceOfArabiaPosterImg from '@/public/lawrenceOfArabiaPoster.jpg';
 
 export const links = [
     {
