@@ -77,6 +77,13 @@ export const projectsData = [
         tags: ['Node.js', 'express', 'Docker', 'RabbitMQ', 'Jest', 'Python'],
         url: 'https://github.com/Mikkuk/DevOps',
     },
+    {
+        title: 'Portfolio website',
+        description:
+            'This very website that you are on right now. Built with React, Next.js, TypeScript, Tailwind CSS, Framer Motion and hosted on Vercel.',
+        tags: ['React', 'Next.js', 'TypeScript', 'Tailwind', 'Framer Motion'],
+        url: 'https://github.com/Mikkuk/Portfolio-Website',
+    },
 ] as const;
 
 export const skillsData = [
