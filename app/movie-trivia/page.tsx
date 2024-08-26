@@ -33,7 +33,6 @@ export default function Page() {
 
     const handleSubmit = (e: React.FormEvent) => {
         e.preventDefault();
-        const currentQuestion = questions[currentQuestionIndex];
         if (userAnswer.toLowerCase() === currentQuestion.answer.toLowerCase()) {
             setIsAnswerCorrect(true);
             setPoints(points + 1);
@@ -68,7 +67,7 @@ export default function Page() {
     }
 
     return (
-        <main className="flex flex-col items-center mx-5">
+        <main className="flex flex-col items-center mx-5 mb-10">
             <motion.div
                 initial={{ opacity: 0, y: 100 }}
                 animate={{ opacity: 1, y: 0 }}

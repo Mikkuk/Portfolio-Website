@@ -49,7 +49,7 @@ export default function Question({
                 alt="image from the movie"
                 priority={true}
             />
-            <div className="mt-4 text-xl min-h-16">
+            <div className="mt-4 text-xl min-h-24">
                 {hint && <span>Hint: {hint}</span>}
             </div>
             <form
