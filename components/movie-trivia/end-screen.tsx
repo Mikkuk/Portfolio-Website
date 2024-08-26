@@ -32,7 +32,7 @@ export default function EndScreen({
                 href="/#home"
                 className=" bg-gray-900 text-white min-w-[13rem] px-7 py-3 mt-6 mb-10
             flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 
-            hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-white dark:bg-opacity-10"
             >
                 Back to Portfolio{' '}
                 <TbArrowBackUp className="opacity-70 group-hover:translate-x-1 transition" />
@@ -41,7 +41,7 @@ export default function EndScreen({
                 onClick={handleGameRestart}
                 className=" bg-gray-900 text-white min-w-[13rem] px-7 py-3 mb-20
             flex items-center justify-center gap-2 rounded-full outline-none focus:scale-110 
-            hover:scale-110 hover:bg-gray-950 active:scale-105 transition"
+            hover:scale-110 hover:bg-gray-950 active:scale-105 transition dark:bg-white dark:bg-opacity-10"
             >
                 Play again
             </button>

@@ -58,6 +58,7 @@ export default function Question({
             >
                 <input
                     className="h-14 w-full px-4 rounded-lg border-black dark:bg-white dark:bg-opacity-80 dark:focus:bg-opacity-100 transition-all dark:outline-none"
+                    name='answer'
                     type="text"
                     value={userAnswer}
                     placeholder="Type your answer here"
