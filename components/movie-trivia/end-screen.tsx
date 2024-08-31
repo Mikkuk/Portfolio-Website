@@ -14,7 +14,7 @@ export default function EndScreen({
     handleGameRestart,
 }: EndScreenProps) {
     return (
-        <div className="flex flex-col items-center mx-5">
+        <section className="flex flex-col items-center mx-5">
             <p className="m-4 px-4 text-xl font-medium text-center">
                 Congratulations! You've completed the trivia.
                 <span className="block m-4 px-4 text-2xl font-semibold sm:text-4xl">
@@ -45,6 +45,6 @@ export default function EndScreen({
             >
                 Play again
             </button>
-        </div>
+        </section>
     );
 }

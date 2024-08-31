@@ -17,7 +17,7 @@ export default function Result({
     handleNextQuestion,
 }: ResultProps) {
     return (
-        <div className="my-10">
+        <section className="my-10">
             <p className="m-4 text-xl font-medium">
                 {isCorrect ? 'Correct!' : 'The correct answer was:'}
                 <span className="my-4 block italic font-bold">
@@ -39,6 +39,6 @@ export default function Result({
             >
                 Continue
             </button>
-        </div>
+        </section>
     );
 }
